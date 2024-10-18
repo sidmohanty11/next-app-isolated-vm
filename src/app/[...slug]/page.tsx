@@ -15,11 +15,6 @@ interface PageProps {
 const PUBLIC_API_KEY = "ad30f9a246614faaa6a03374f83554c9";
 
 export default async function Page(props: PageProps) {
-  const { initializeNodeRuntime } = await import(
-    "@builder.io/sdk-react/node/init"
-  );
-  initializeNodeRuntime();
-
   //   const urlPath = "/" + (props.params?.slug?.join("/") || "");
 
   const content = await fetchOneEntry({
