@@ -20,7 +20,7 @@ export default async function Page(props: PageProps) {
   );
   initializeNodeRuntime();
 
-  //   const urlPath = "/" + (props.params?.slug?.join("/") || "");
+  //   const urlPath = "/" + (props.params?.slug?.join("/") || "")
 
   const content = await fetchOneEntry({
     options: getBuilderSearchParams(props.searchParams),
